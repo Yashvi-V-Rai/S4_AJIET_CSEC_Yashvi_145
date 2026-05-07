@@ -1,0 +1,14 @@
+#swapping using one operator(bitwise)
+class Main {
+    public static void main(String[] args) {
+        int x=5;
+        int y=10;
+        System.out.println("before swapping value x="+x);
+        System.out.println("before swapping value y="+y);
+        x=x^y;
+        y=x^y;
+        x=x^y;
+        System.out.println("after swapping value x="+x);
+        System.out.println("after swapping value y="+y);
+    }
+}
