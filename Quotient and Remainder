@@ -1,0 +1,13 @@
+#Quotient and Remainder
+class main{
+    public static void main(String[] args) {
+        int x=20;
+        int y=4;
+        int q;
+        int r;
+        q=x/y;
+        r=x%y;
+        System.out.println("quotient="+q);
+        System.out.println("Remainder="+r);
+    }
+}
