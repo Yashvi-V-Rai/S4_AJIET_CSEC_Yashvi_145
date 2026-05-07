@@ -1,0 +1,15 @@
+#swapping using 3rd variable
+class Main {
+    public static void main(String[] args) {
+        int power=10;
+        int ninja=20;
+        int bottle;
+        System.out.println("before swapping value power="+power);
+        System.out.println("before swapping value ninja="+ninja);
+        bottle=power;
+        power=ninja;
+        ninja=bottle;
+        System.out.println("after swapping value power="+power);
+        System.out.println("after swapping value ninja="+ninja);
+    }
+}
