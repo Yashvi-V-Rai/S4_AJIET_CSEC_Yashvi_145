@@ -1,0 +1,33 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        int n,k=2,j=3,m,p,tm,rem;
+        int db=0;
+        int dp=0;
+        System.out.println("Enter the no.of monkeys");
+        Scanner s=new Scanner(System.in);
+        n=s.nextInt();
+        System.out.println("Enter the no.of bananas");
+       m=s.nextInt();
+       System.out.println("Enter the no.of peanuts");
+        p=s.nextInt();
+        if(j<0 | k<0 || m<0 || p<0)
+        {
+            System.out.println("Invalid input");
+        }
+        else
+        {
+            db=m/k;
+            dp=p/j;
+            tm=db+dp;
+            n=n-tm;
+            while(m%k!=0||p%j!=0)
+            {
+                n=n-1;
+            }
+           System.out.println("Number of monkeys remaining in tree"+n);
+        }
+    }
+            }
+            
+           
