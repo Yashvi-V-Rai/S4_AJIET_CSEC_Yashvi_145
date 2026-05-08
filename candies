@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        int candies=10;
+        int min=5;
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        if(n>candies-min)
+        {
+            System.out.println("Invalid input");
+        }else
+        {
+            candies-=n;
+             System.out.println("No.of candies sold="+n);
+             System.out.println("No.of candies available="+candies);
+        }
+    }
+}
